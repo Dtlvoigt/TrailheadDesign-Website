@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.CardButton {
+  display: block;
+  align-self: end;
+  margin: 1em 0 0.5em 0;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0d0d0d;
+  padding: 0.7em;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Container {
+  text-align: center;
+  padding: 20px;
+}
+
+.FlexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1.25em);
+}
+
+.Parallax {
+  /* height: 1100px; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ProjectCard {
+  --flow-space: 0.5em;
+  --hsl: var(--hue), var(--saturation), var(--lightness);
+  flex: 1 1 14rem;
+  padding: 1.5em 2em;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  align-items: center;
+  gap: 1.25em;
+  color: #eceff1;
+  background-color: #2b2b2b;
+  border: 1px solid #eceff133;
+  border-radius: 15px;
+
+
+  /* border-width: 0px !important;
+  margin: 20px;
+  width: 22rem !important;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center; */
+  /* border-radius: 10px !important; */
+}
+
+.ProjectCard .card-body {
+  /* background-image: linear-gradient(to bottom, #EE91BC, #da5a95); */
+}
+
+.ProjectCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ProjectImg {
+  height: 200px;
+}
+
+.ProjectsSection {
+  padding: 80px 0px 80px 0px;
+}
+
+/* removes underline on project cards */
+.ProjectsSection a {
+  text-decoration: none;
+}
+
+#greenDiv {
+  background-image:
+    linear-gradient(to bottom, #A8DF65, #65b306);
+}
+
+#pinkDiv {
+  background-image:
+    linear-gradient(to bottom, #EE91BC, #c94c86);
+}
+
+#orangeDiv {
+  background-image:
+    linear-gradient(to bottom, #EFB960, #d88a0d);
+}
+
