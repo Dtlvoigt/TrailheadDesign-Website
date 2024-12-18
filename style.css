@@ -22,6 +22,13 @@ h1 {
   font-weight: 600;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .Container {
   text-align: center;
   padding: 20px;
@@ -36,6 +43,59 @@ h1 {
 
 .flow > * + * {
   margin-top: var(--flow-space, 1.25em);
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+header {
+  min-height: 80px;
+  display: flex;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .headerLinks {
+  display: flex;
+  align-items: center;
+}
+
+header .headerLinks li {
+  margin-left: 30px;
+  color: #5d5d5d;
+  cursor: pointer;
+  transition: .3s;
+}
+
+header .headerLinks li:last-child {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: #6c63ff;
+}
+
+header .headerLinks li:not(:last-child):hover {
+  color: #6c63ff;
 }
 
 .Parallax {
@@ -93,6 +153,12 @@ h1 {
 /* removes underline on project cards */
 .ProjectsSection a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 #greenDiv {
