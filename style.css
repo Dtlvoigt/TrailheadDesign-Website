@@ -66,6 +66,7 @@ h1 {
 
 header {
   min-height: 80px;
+  background-color: forestgreen;
   display: flex;
 }
 
@@ -104,6 +105,10 @@ header .headerLinks li:not(:last-child):hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#projects {
+  margin-top:20px;
 }
 
 .ProjectCard {
@@ -148,6 +153,7 @@ header .headerLinks li:not(:last-child):hover {
 
 .ProjectsSection {
   padding: 80px 0px 80px 0px;
+  margin-top: 120px;
 }
 
 /* removes underline on project cards */
