@@ -91,8 +91,8 @@ header .headerLinks li {
 header .headerLinks li:last-child {
   border-radius: 20px;
   padding: 10px 20px;
-  color: #FFF;
-  background-color: #6c63ff;
+  color: #000000;
+  background-color: hsl(177, 100%, 69%);
 }
 
 header .headerLinks li:not(:last-child):hover {
