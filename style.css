@@ -79,6 +79,7 @@ header .container {
 header .headerLinks {
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 header .headerLinks li {
